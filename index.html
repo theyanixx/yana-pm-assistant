@@ -45,7 +45,7 @@
   :root { --кегль-h1: clamp(44px, 4vw, 58px); }
 }
 :root, .светлый { --цвет-кнопки: #2B2D42; --цвет-на-кнопке: #FAFAFA; --цвет-кнопки-навёл: var(--цвет-акцент-тёмный); }
-.тёмный { --цвет-кнопки: #4ECDC4; --цвет-на-кнопке: #1B1C2B; --цвет-кнопки-навёл: #6ED6CF; }
+.тёмный, .липкая-кнопка--тёмная { --цвет-кнопки: #4ECDC4; --цвет-на-кнопке: #1B1C2B; --цвет-кнопки-навёл: #6ED6CF; }
 
 </style>
 <script>
@@ -90,7 +90,7 @@
 })();
 </script>
 </head>
-<body class="с-липкой-кнопкой">
+<body class="с-липкой-кнопкой с-липкой-кнопкой--тёмная">
 <section class="блок блок--первый-экран первый-экран--орбита тёмный фон--пятна" id="экран-1" data-тип="первый-экран" data-схема="орбита" data-ключ-макета="тёмная" data-картинка="вырез">
   <header class="шапка">
     <a class="шапка__лого" href="#">Яна — ПМ-ассистент</a>
@@ -103,9 +103,9 @@
       <p class="кикер"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <path d="M13 2L4 14h7l-1 8 9-12h-7z"/>
 </svg>Функции проджект-менеджера</p>
-      <h1>Яна, ПМ-ассистент<span class="делитель">:</span> <span class="хвост">навожу порядок в задачах и автоматизирую рутину <em class="акцент">команды</em></span></h1>
+      <h1>Яна, <span style="white-space: nowrap">ПМ-ассистент</span><span class="делитель">:</span> <span class="хвост">навожу порядок в задачах и автоматизирую рутину <em class="акцент">команды</em></span></h1>
       <i class="черта"></i>
-      <p class="лид">С апреля 2024 — бизнес-ассистент, с февраля 2026 — ПМ-ассистент в онлайн-школе Diva: пять отделов, 60+ сотрудников</p>
+      <p class="лид">С апреля 2024 — бизнес-ассистент, с февраля 2026 — <span style="white-space: nowrap">ПМ-ассистент</span> в онлайн-школе Diva: пять отделов, 60+ сотрудников</p>
       <ul class="цифры">
         <li class="цифра"><b class="цифра__значение">5</b><span class="цифра__подпись">отделов</span></li>
         <li class="цифра"><b class="цифра__значение">5</b><span class="цифра__подпись">планёрок в неделю</span></li>
@@ -116,7 +116,7 @@
     <div class="орбита__сцена">
       <div class="орбита__фигура">
         <span class="опора"></span><span class="кольцо"></span><span class="кольцо кольцо--2"></span>
-        <figure class="картинка картинка--вырез первый-экран__картинка" style="--голова-в-кадре: .152; --макушка-в-кадре: .063"><img src="img/portret-1-vyrez.png" alt="Яна, ПМ-ассистент навожу порядок в задачах и автоматизирую рутину команды" data-лицо="50,22" fetchpriority="high"></figure>
+        <figure class="картинка картинка--вырез первый-экран__картинка" style="--голова-в-кадре: .152; --макушка-в-кадре: .063"><picture><source media="(max-width: 899px)" srcset="img/portret-1-vyrez-telefon.webp"><img src="img/portret-1-vyrez.webp" alt="Яна, портрет" data-лицо="50,22" fetchpriority="high"></picture></figure>
       </div>
       <div class="карточка карточка--стекло спутник с1 парит"><div class="спутник__икон"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <rect x="3" y="4" width="18" height="16" rx="2"/>
@@ -135,6 +135,212 @@
 </svg></div><span><b>Маршрутные листы</b><span>для новых сотрудников</span></span><i class="спутник__шкала"></i></div>
     </div>
   </div>
+</section>
+<section class="блок блок--услуги-и-цены блок--громко тёмный второй" id="экран-02" data-тип="услуги-и-цены" data-вёрстка="своя">
+<span class="пл-свет" aria-hidden="true"></span>
+<span class="сетка-текстура" aria-hidden="true"></span>
+<div class="блок__внутри">
+  <div class="секция__шапка">
+    <p class="кикер">Услуги и условия</p>
+    <h2>Что я беру на себя и сколько это стоит</h2>
+  </div>
+  <div class="пл-сцена">
+    <article class="пл-цена">
+      <p class="пл-цена__метка">Одна месячная ставка за постоянную работу:</p>
+      <h3 class="пл-цена__сумма"><span class="пл-цена__от">от</span> <b>150 000 ₽</b> <span class="пл-цена__мес">в месяц</span></h3>
+      <p class="мелкий пл-цена__условие">Работаю в постоянном формате, разовые проекты пока не беру</p>
+      <div class="пл-цена__действие"><a class="кнопка кнопка--главная" href="https://t.me/theyanixx">Обсудить условия в Телеграме</a></div>
+    </article>
+    <ul class="пл-услуги">
+      <li class="пл-услуга">
+        <span class="пл-услуга__икон" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="5" width="18" height="16" rx="2"/>
+  <path d="M3 10h18M8 3v4M16 3v4"/>
+</svg></span>
+        <div class="пл-услуга__текст"><h3>Задачи и сроки</h3><p>Ежедневно слежу за статусами, дедлайнами и просрочками у руководителей и команды</p></div>
+      </li>
+      <li class="пл-услуга">
+        <span class="пл-услуга__икон" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="9" cy="8" r="3.5"/>
+  <circle cx="17" cy="9" r="2.5"/>
+  <path d="M3 20a6 6 0 0 1 12 0M15 20a4 4 0 0 1 6 0"/>
+</svg></span>
+        <div class="пл-услуга__текст"><h3>Планёрки и протоколы</h3><p>Провожу встречи отделов, записываю протоколы и раздаю задачи по итогам</p></div>
+      </li>
+      <li class="пл-услуга">
+        <span class="пл-услуга__икон" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 4h6a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4zM20 4h-6a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h6z"/>
+</svg></span>
+        <div class="пл-услуга__текст"><h3>Регламенты и адаптация</h3><p>Пишу правила взаимодействия отделов, маршрутные листы и видеоинструкции для новых сотрудников</p></div>
+      </li>
+      <li class="пл-услуга">
+        <span class="пл-услуга__икон" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="11" cy="11" r="6.5"/>
+  <path d="M16 16l5 5"/>
+</svg></span>
+        <div class="пл-услуга__текст"><h3>Проблемы в процессах</h3><p>Нахожу, где ломается взаимодействие отделов, и предлагаю, как это исправить</p></div>
+      </li>
+      <li class="пл-услуга">
+        <span class="пл-услуга__икон" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="5" y="11" width="14" height="10" rx="2"/>
+  <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+</svg></span>
+        <div class="пл-услуга__текст"><h3>Порядок в доступах</h3><p>Чищу права к сервисам и убираю доступы ушедших сотрудников</p></div>
+      </li>
+      <li class="пл-услуга">
+        <span class="пл-услуга__икон" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/>
+</svg></span>
+        <div class="пл-услуга__текст"><h3>Боты и ИИ-агенты</h3><p>Собираю сама: протоколы встреч, дашборд задач, боты для HR</p></div>
+      </li>
+    </ul>
+  </div>
+</div>
+</section>
+<section class="блок блок--что-получите тёмный" id="экран-03" data-тип="что-получите" data-вёрстка="своя">
+<span class="цф-свет" aria-hidden="true"></span>
+<span class="сетка-текстура" aria-hidden="true"></span>
+<div class="блок__внутри">
+  <div class="секция__шапка секция__шапка--центр">
+    <p class="кикер">Почему я</p>
+    <h2>Опыт в цифрах: отделы, планёрки, агенты и минуты экономии</h2>
+    <p class="секция__лид">Цифры из моей работы в онлайн-школе Diva и на прошлых проектах; где это моя оценка, так и написано</p>
+  </div>
+  <div class="цф-сцена">
+    <ul class="цф-плита цф-плита--две">
+      <li class="цф-ячейка">
+        <div class="цф-голова">
+          <span class="цф-икон" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="9" cy="8" r="3.5"/>
+  <circle cx="17" cy="9" r="2.5"/>
+  <path d="M3 20a6 6 0 0 1 12 0M15 20a4 4 0 0 1 6 0"/>
+</svg></span>
+          <h3 class="цф-итог">
+            <span class="цф-знач"><span class="цф-число"><b>5</b></span> <span class="цф-ед">отделов,</span></span>
+            <span class="цф-знач"><span class="цф-число"><b>60+</b></span> <span class="цф-ед">сотрудников</span></span>
+          </h3>
+        </div>
+        <p>Веду задачи и планёрки: продукт, маркетинг, контент, продажи, технический отдел</p>
+      </li>
+      <li class="цф-ячейка">
+        <div class="цф-голова">
+          <span class="цф-икон" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="5" width="18" height="16" rx="2"/>
+  <path d="M3 10h18M8 3v4M16 3v4"/>
+</svg></span>
+          <h3 class="цф-итог">
+            <span class="цф-знач"><span class="цф-число"><b>5</b></span> <span class="цф-ед">планёрок в неделю</span></span>
+          </h3>
+        </div>
+        <p>Каждую провожу, записываю протокол и раздаю задачи по итогам</p>
+      </li>
+    </ul>
+    <article class="цф-герой">
+      <div class="цф-верх">
+        <span class="цф-икон" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="9"/>
+  <path d="M12 7v5l3.5 2"/>
+</svg></span>
+        <span class="цф-оценка">оценка</span>
+      </div>
+      <h3 class="цф-итог">
+        <span class="цф-число"><span class="цф-при">Около</span> <b>5</b> <span class="цф-ед">минут</span></span>
+        <span class="цф-шкала цф-шкала--после" aria-hidden="true"></span>
+        <span class="цф-было">вместо <b>1,5–2 часов</b></span>
+        <span class="цф-шкала цф-шкала--до" aria-hidden="true"></span>
+      </h3>
+      <p>Столько уходит у руководителя на обход задач команды после дашборда и новой структуры задач</p>
+    </article>
+    <ul class="цф-плита цф-плита--три">
+      <li class="цф-ячейка">
+        <div class="цф-голова">
+          <span class="цф-икон" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/>
+</svg></span>
+          <h3 class="цф-итог">
+            <span class="цф-знач"><span class="цф-число"><b>3</b></span> <span class="цф-ед">ИИ-агента и боты для HR</span></span>
+          </h3>
+        </div>
+        <p>Собрала сама для команды, среди них агент для протоколов встреч и дашборд задач</p>
+      </li>
+      <li class="цф-ячейка">
+        <div class="цф-голова">
+          <span class="цф-икон" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="5" y="11" width="14" height="10" rx="2"/>
+  <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+</svg></span>
+          <h3 class="цф-итог">
+            <span class="цф-знач"><span class="цф-число"><span class="цф-при">Около</span> <b>15&nbsp;000</b></span> <span class="цф-ед">строк доступов</span></span>
+          </h3>
+        </div>
+        <p>Разобрала при чистке прав на Google Диске и убрала доступы ушедших сотрудников</p>
+      </li>
+      <li class="цф-ячейка">
+        <div class="цф-голова">
+          <span class="цф-икон" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 7a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/>
+</svg></span>
+          <h3 class="цф-итог">
+            <span class="цф-знач"><span class="цф-число"><span class="цф-при">До</span> <b>4</b></span> <span class="цф-ед">проектов одновременно</span></span>
+          </h3>
+        </div>
+        <p>Так вела дела одного собственника как бизнес-ассистент с апреля 2024 по февраль 2026, теперь 5 отделов и 60+ человек</p>
+      </li>
+    </ul>
+  </div>
+</div>
+</section>
+<section class="блок блок--работы тёмный второй" id="экран-04" data-тип="работы" data-вёрстка="своя">
+<div class="блок__внутри">
+  <div class="пл-шапка">
+    <div class="пл-шапка__главное">
+      <p class="кикер">Что сделано</p>
+      <h2>Сделано: регламенты, маршрутные листы, отчёты и юридический порядок</h2>
+    </div>
+    <p class="лид">Конкретные дела из моей работы; имена коллег и внутренние названия продуктов не указываю</p>
+  </div>
+  <div class="пл-дела">
+    <div class="пл-демо">
+      <figure class="мокап">
+        <div class="заглушка-картинки">заглушка</div>
+        <span class="плашка пл-демо__метка">демо-данные</span>
+        <figcaption>Демо-версия дашборда задач «Пульс»</figcaption>
+      </figure>
+    </div>
+    <article class="пл-дело пл-дело--1">
+      <h3><span class="пл-дело__н" aria-hidden="true">01</span><span class="пл-дело__имя">Регламенты для отделов</span></h3>
+      <p>Правила общения между отделами, проведения планёрок и проверки задач, составления ТЗ и ведения задач в рабочем сервисе</p>
+    </article>
+    <article class="пл-дело пл-дело--2">
+      <h3><span class="пл-дело__н" aria-hidden="true">02</span><span class="пл-дело__имя">Маршрутные листы</span></h3>
+      <p>Для новых руководителей и сотрудников, со структурой и видеоинструкциями, и отдельный лист при увольнении</p>
+    </article>
+    <article class="пл-дело">
+      <h3><span class="пл-дело__н" aria-hidden="true">03</span><span class="пл-дело__имя">Новый формат отчётов</span></h3>
+      <p>Переход команды на отчёты «фокус, процессные, ежедневные»</p>
+    </article>
+    <article class="пл-дело пл-дело--ш2">
+      <h3><span class="пл-дело__н" aria-hidden="true">04</span><span class="пл-дело__имя">Юридический порядок на лендингах</span></h3>
+      <p>Замена политики конфиденциальности и уведомлений о cookies на всех собранных лендингах, чек-лист и таблица проверки документов</p>
+    </article>
+    <article class="пл-дело">
+      <h3><span class="пл-дело__н" aria-hidden="true">05</span><span class="пл-дело__имя">Отправка косметики</span></h3>
+      <p>Регламент, отчёты и сверка трек-номеров с доставкой</p>
+    </article>
+    <article class="пл-дело">
+      <h3><span class="пл-дело__н" aria-hidden="true">06</span><span class="пл-дело__имя">Материалы для отдела продаж</span></h3>
+      <p>Обновление всех материалов по всем курсам и продуктам школы</p>
+    </article>
+    <article class="пл-дело">
+      <h3><span class="пл-дело__н" aria-hidden="true">07</span><span class="пл-дело__имя">Настройка CRM</span></h3>
+      <p>Сбор внутренних вопросов отделов, взаимодействие с интеграторами, созвоны по настройке</p>
+    </article>
+    <article class="пл-дело пл-дело--ш3">
+      <h3><span class="пл-дело__н" aria-hidden="true">08</span><span class="пл-дело__имя">Партнёрская программа</span></h3>
+      <p>Перевод отдела креаторов на партнёрскую программу: разобралась в условиях, работала с юристом, вместе подготовили дополнительные соглашения и оферту</p>
+    </article>
+  </div>
+</div>
 </section>
 <div class="липкая-кнопка липкая-кнопка--тёмная"><a class="кнопка кнопка--главная" href="https://t.me/theyanixx">Написать в Телеграм</a></div>
 <script>
