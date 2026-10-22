@@ -1934,7 +1934,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-04.тёмный .пл-демо .заглушка-картинки, #экран-04.светлый .пл-демо .заглушка-картинки {
       background: color-mix(in srgb, var(--цвет-тёмный-текст) 11%, var(--цвет-тёмный-фон));
       color: color-mix(in srgb, var(--цвет-тёмный-текст) 78%, var(--цвет-тёмный-фон)); }
-  #экран-04 .пл-демо__метка { position: absolute; z-index: 2; top: 2.75rem; right: .875rem; }
+  #экран-04 .пл-демо__метка { display: inline-block; margin-right: .625rem; vertical-align: baseline; }
   #экран-04.тёмный .пл-демо .мокап figcaption, #экран-04.светлый .пл-демо .мокап figcaption {
       color: color-mix(in srgb, var(--цвет-тёмный-текст) 80%, transparent); }
 
@@ -1981,6 +1981,57 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
     #экран-04 .пл-дело { transition: none; }
     #экран-04.тёмный .пл-дело:hover, #экран-04.светлый .пл-дело:hover { transform: none; }
   }
+
+  #экран-04 .пл-р { position: absolute; width: 1px; height: 1px; margin: 0; opacity: 0; pointer-events: none; }
+  #экран-04 .пл-кадр, #экран-04 .пл-подпись { display: none; }
+  #экран-04 .пл-подпись { margin-top: .25rem; }
+  #экран-04 .пл-кадр { color: inherit; text-decoration: none; }
+  #экран-04 #пл-о1:checked ~ .мокап .пл-кадр--1,
+  #экран-04 #пл-о2:checked ~ .мокап .пл-кадр--2,
+  #экран-04 #пл-о3:checked ~ .мокап .пл-кадр--3,
+  #экран-04 #пл-о4:checked ~ .мокап .пл-кадр--4,
+  #экран-04 #пл-о5:checked ~ .мокап .пл-кадр--5,
+  #экран-04 #пл-о6:checked ~ .мокап .пл-кадр--6 { display: block; }
+  #экран-04 #пл-о1:checked ~ .мокап .пл-подпись--1,
+  #экран-04 #пл-о2:checked ~ .мокап .пл-подпись--2,
+  #экран-04 #пл-о3:checked ~ .мокап .пл-подпись--3,
+  #экран-04 #пл-о4:checked ~ .мокап .пл-подпись--4,
+  #экран-04 #пл-о5:checked ~ .мокап .пл-подпись--5,
+  #экран-04 #пл-о6:checked ~ .мокап .пл-подпись--6 { display: block; }
+  #экран-04 .пл-шаги { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+  #экран-04 .пл-шаги label { display: inline-flex; align-items: center; gap: .5em; min-height: 2.75rem; padding: .25rem 1rem;
+      border-radius: 9em; font-size: var(--кегль-мелкий); line-height: 1.2; cursor: pointer;
+      transition: background var(--длительность) var(--плавность), border-color var(--длительность) var(--плавность); }
+  #экран-04 .пл-шаги b { font-variant-numeric: tabular-nums; font-weight: inherit; }
+  #экран-04.тёмный .пл-шаги label, #экран-04.светлый .пл-шаги label {
+      color: color-mix(in srgb, var(--цвет-тёмный-текст) 82%, transparent);
+      background: color-mix(in srgb, var(--цвет-тёмный-текст) 6%, transparent);
+      border: 1px solid color-mix(in srgb, var(--цвет-тёплый) 30%, transparent); }
+  #экран-04.тёмный .пл-шаги b, #экран-04.светлый .пл-шаги b { color: var(--цвет-тёплый); }
+  #экран-04.тёмный .пл-шаги label:hover, #экран-04.светлый .пл-шаги label:hover {
+      border-color: color-mix(in srgb, var(--цвет-тёплый) 60%, transparent); }
+  #экран-04.тёмный #пл-о1:checked ~ .пл-шаги label[for="пл-о1"],
+  #экран-04.тёмный #пл-о2:checked ~ .пл-шаги label[for="пл-о2"],
+  #экран-04.тёмный #пл-о3:checked ~ .пл-шаги label[for="пл-о3"],
+  #экран-04.тёмный #пл-о4:checked ~ .пл-шаги label[for="пл-о4"],
+  #экран-04.тёмный #пл-о5:checked ~ .пл-шаги label[for="пл-о5"],
+  #экран-04.тёмный #пл-о6:checked ~ .пл-шаги label[for="пл-о6"],
+  #экран-04.светлый #пл-о1:checked ~ .пл-шаги label[for="пл-о1"],
+  #экран-04.светлый #пл-о2:checked ~ .пл-шаги label[for="пл-о2"],
+  #экран-04.светлый #пл-о3:checked ~ .пл-шаги label[for="пл-о3"],
+  #экран-04.светлый #пл-о4:checked ~ .пл-шаги label[for="пл-о4"],
+  #экран-04.светлый #пл-о5:checked ~ .пл-шаги label[for="пл-о5"],
+  #экран-04.светлый #пл-о6:checked ~ .пл-шаги label[for="пл-о6"] {
+      color: var(--цвет-тёмный-текст);
+      background: color-mix(in srgb, var(--цвет-тёплый) 22%, transparent);
+      border-color: var(--цвет-тёплый); }
+  #экран-04 #пл-о1:focus-visible ~ .пл-шаги label[for="пл-о1"],
+  #экран-04 #пл-о2:focus-visible ~ .пл-шаги label[for="пл-о2"],
+  #экран-04 #пл-о3:focus-visible ~ .пл-шаги label[for="пл-о3"],
+  #экран-04 #пл-о4:focus-visible ~ .пл-шаги label[for="пл-о4"],
+  #экран-04 #пл-о5:focus-visible ~ .пл-шаги label[for="пл-о5"],
+  #экран-04 #пл-о6:focus-visible ~ .пл-шаги label[for="пл-о6"] {
+      outline: 2px solid var(--цвет-тёплый); outline-offset: 2px; }
 
 /* экран 05 */
 #экран-05 { overflow: clip; }

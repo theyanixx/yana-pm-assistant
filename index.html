@@ -301,11 +301,36 @@
   </div>
   <div class="пл-дела">
     <div class="пл-демо">
+      <input class="пл-р" type="radio" name="пл-обзор" id="пл-о1" checked aria-label="Отдел">
+      <input class="пл-р" type="radio" name="пл-обзор" id="пл-о2" aria-label="Все сотрудники">
+      <input class="пл-р" type="radio" name="пл-обзор" id="пл-о3" aria-label="Карточка">
+      <input class="пл-р" type="radio" name="пл-обзор" id="пл-о4" aria-label="Принять и контроль">
+      <input class="пл-р" type="radio" name="пл-обзор" id="пл-о5" aria-label="Другой сотрудник">
+      <input class="пл-р" type="radio" name="пл-обзор" id="пл-о6" aria-label="Протоколы">
       <figure class="мокап">
-        <div class="заглушка-картинки">заглушка</div>
-        <span class="плашка пл-демо__метка">демо-данные</span>
-        <figcaption>Демо-версия дашборда задач «Пульс»</figcaption>
+        <a class="пл-кадр пл-кадр--1" href="img/pulse-1-otdel.webp" target="_blank" rel="noopener" title="Открыть крупно"><img src="img/pulse-1-otdel.webp" alt="Демо-дашборд «Пульс»: отдел «Продажи», плитки со статусами задач и полосы по каждому статусу" width="1600" height="1000" loading="lazy" decoding="async"></a>
+        <a class="пл-кадр пл-кадр--2" href="img/pulse-2-vse-sotrudniki.webp" target="_blank" rel="noopener" title="Открыть крупно"><img src="img/pulse-2-vse-sotrudniki.webp" alt="Демо-дашборд: раздел «Все сотрудники», люди сгруппированы по отделам, курсор на одном из них" width="1600" height="1000" loading="lazy" decoding="async"></a>
+        <a class="пл-кадр пл-кадр--3" href="img/pulse-3-kartochka.webp" target="_blank" rel="noopener" title="Открыть крупно"><img src="img/pulse-3-kartochka.webp" alt="Демо-дашборд: карточка сотрудника, сверху шесть статусов задач и готовые задачи" width="1600" height="1000" loading="lazy" decoding="async"></a>
+        <a class="пл-кадр пл-кадр--4" href="img/pulse-4-prinyat-kontrol.webp" target="_blank" rel="noopener" title="Открыть крупно"><img src="img/pulse-4-prinyat-kontrol.webp" alt="Демо-дашборд: в карточке сотрудника разделы «Нужно принять» и «На контроле»" width="1600" height="1000" loading="lazy" decoding="async"></a>
+        <a class="пл-кадр пл-кадр--5" href="img/pulse-5-drugoy.webp" target="_blank" rel="noopener" title="Открыть крупно"><img src="img/pulse-5-drugoy.webp" alt="Демо-дашборд: карточка другого сотрудника, задачи во всех статусах" width="1600" height="1000" loading="lazy" decoding="async"></a>
+        <a class="пл-кадр пл-кадр--6" href="img/pulse-6-protokoly.webp" target="_blank" rel="noopener" title="Открыть крупно"><img src="img/pulse-6-protokoly.webp" alt="Демо-дашборд: лента протоколов планёрок, у каждой встречи итог и задачи с неё" width="1600" height="1000" loading="lazy" decoding="async"></a>
+        <figcaption><span class="плашка пл-демо__метка">демо-данные</span> Демо-версия дашборда задач «Пульс»
+          <span class="пл-подпись пл-подпись--1">Отдел — что сделано, что в работе и что просрочено, на одной странице</span>
+          <span class="пл-подпись пл-подпись--2">Все сотрудники — список по отделам, у каждого число задач</span>
+          <span class="пл-подпись пл-подпись--3">Нажимаю на человека — вижу его задачи по статусам</span>
+          <span class="пл-подпись пл-подпись--4">Что человеку нужно принять и что у него на контроле</span>
+          <span class="пл-подпись пл-подпись--5">Так можно зайти в любого сотрудника</span>
+          <span class="пл-подпись пл-подпись--6">Протоколы планёрок подтягиваются сами: итог встречи и задачи с неё</span>
+        </figcaption>
       </figure>
+      <div class="пл-шаги" role="group" aria-label="Что показано в демо">
+        <label for="пл-о1"><b>1</b>Отдел</label>
+        <label for="пл-о2"><b>2</b>Все сотрудники</label>
+        <label for="пл-о3"><b>3</b>Карточка</label>
+        <label for="пл-о4"><b>4</b>Принять и контроль</label>
+        <label for="пл-о5"><b>5</b>Другой сотрудник</label>
+        <label for="пл-о6"><b>6</b>Протоколы</label>
+      </div>
     </div>
     <article class="пл-дело пл-дело--1">
       <h3><span class="пл-дело__н" aria-hidden="true">01</span><span class="пл-дело__имя">Регламенты для отделов</span></h3>
@@ -352,7 +377,7 @@
       <p class="лид ос-лид"><b>Яна</b> · <span class="ос-нб">ПМ-ассистент</span> в онлайн-школе Diva</p>
     </div>
     <figure class="фото ос-фото">
-      <div class="заглушка-картинки">заглушка</div>
+      <img src="img/portret-obo-mne.webp" alt="Яна, ПМ-ассистент: деловой портрет" width="1086" height="1448" loading="lazy" decoding="async">
     </figure>
     <div class="ос-путь">
       <p>Я начинала координатором мероприятий и в отделе продаж ассоциации загородных отелей: с 2023 года организовывала форумы на <span class="ос-нб">150–250</span> человек и работала с <span class="ос-нб">B2B-клиентами</span>.</p>
