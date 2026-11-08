@@ -92,6 +92,17 @@
 </head>
 <body class="с-липкой-кнопкой с-липкой-кнопкой--тёмная">
 <section class="блок блок--первый-экран первый-экран--орбита тёмный фон--пятна" id="экран-1" data-тип="первый-экран" data-схема="орбита" data-ключ-макета="тёмная" data-картинка="вырез">
+<style>
+  /* плашки вокруг портрета на окнах уже 1600 px. Портрет большой и стоит на одном месте, а плашки привязаны
+     к ширине колонки, поэтому на узком окне они ложились на макушку, лоб и щёку. Здесь верхняя пара стоит
+     над макушкой, нижняя — под подбородком, на пиджаке; от 1600 px всё как в ядре */
+  @media (min-width: 900px) and (max-width: 1599px) {
+    #экран-1 .орбита__сцена .с1 { left: calc(54% - 225px); right: auto; top: 0; }
+    #экран-1 .орбита__сцена .с2 { left: calc(54% + 5px); right: auto; top: 0; }
+    #экран-1 .орбита__сцена .с3 { left: calc(54% - 225px); right: auto; top: 34.5rem; }
+    #экран-1 .орбита__сцена .с4 { left: calc(54% + 5px); right: auto; top: 34.5rem; }
+  }
+</style>
   <header class="шапка">
     <a class="шапка__лого" href="#">Яна — Project Manager</a>
     <span class="шапка__лиц"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -436,6 +447,30 @@
       <p class="кн-слова">Напишите, что нужно, и обсудим, подойду ли я</p>
     </div>
     <div class="кн-действие"><a class="кнопка кнопка--главная" href="https://t.me/theyanixx">Написать в Телеграм</a></div>
+  </div>
+</div>
+</section>
+<section class="блок блок--подвал блок--тихо тёмный" id="экран-07" data-тип="подвал" data-вёрстка="своя">
+<div class="блок__внутри">
+  <div class="пд-верх">
+    <div class="пд-лицо">
+      <a class="шапка__лого пд-знак" href="#экран-1">Яна — Project Manager</a>
+      <a class="пд-связь" href="https://t.me/theyanixx"><span class="пд-икон" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M21 4L3 11l6 2 2 6 3-4 5 3z"/>
+  <path d="M9 13l10-8"/>
+</svg></span><span>Телеграм <span class="пд-имя">@theyanixx</span></span></a>
+    </div>
+    <nav class="пд-разделы" aria-label="Разделы страницы">
+      <a href="#экран-02">Почему я</a>
+      <a href="#экран-03">Услуги и условия</a>
+      <a href="#экран-04">Что сделано</a>
+      <a href="#экран-05">Обо мне</a>
+      <a href="#экран-06">Контакты</a>
+    </nav>
+  </div>
+  <div class="пд-низ">
+    <p class="пд-юр"><span class="пд-нб">Яна Карагаева ·</span> самозанятая (плательщик налога на профессиональный доход)</p>
+    <p class="пд-год">© 2026</p>
   </div>
 </div>
 </section>

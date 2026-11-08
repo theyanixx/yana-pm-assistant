@@ -2247,3 +2247,66 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
     #экран-06 .кн-приглашение { row-gap: .75rem; }
     #экран-06 .кн-действие .кнопка { width: auto; min-width: 20rem; }
   }
+
+/* экран 07 */
+#экран-07 { padding-block: clamp(2.5rem, 5vw, 3.75rem) calc(clamp(1.5rem, 3vw, 2rem) + env(safe-area-inset-bottom, 0px)); }
+
+  #экран-07 .пд-нб { white-space: nowrap; }
+
+  #экран-07 .пд-верх { display: grid; row-gap: 1rem; }
+  #экран-07 .пд-лицо { display: grid; justify-items: start; row-gap: .5rem; }
+
+  #экран-07 .пд-знак { font-size: var(--кегль-лид); line-height: 1.2; }
+  #экран-07.тёмный .пд-знак { color: var(--цвет-тёмный-текст); }
+  #экран-07.светлый .пд-знак { color: var(--цвет-текст); }
+
+  #экран-07 .пд-связь { display: inline-flex; align-items: center; gap: .75rem; min-height: 2.75rem;
+      white-space: nowrap; text-decoration: none; }
+  #экран-07 .пд-икон { flex: none; display: grid; place-items: center; width: 2.25rem; height: 2.25rem;
+      border-radius: var(--радиус-малый); }
+  #экран-07 .пд-икон .иконка, #экран-07 .пд-икон svg { width: 1.25rem; height: 1.25rem; color: inherit; }
+  #экран-07 .пд-имя { font-weight: 600; }
+  #экран-07.тёмный .пд-связь { color: color-mix(in srgb, var(--цвет-тёмный-текст) 72%, transparent); }
+  #экран-07.светлый .пд-связь { color: var(--цвет-текст-мягкий); }
+  #экран-07.тёмный .пд-имя { color: var(--цвет-тёмный-текст); }
+  #экран-07.светлый .пд-имя { color: var(--цвет-текст); }
+  #экран-07.тёмный .пд-икон { color: var(--цвет-тёплый);
+      background: color-mix(in srgb, var(--цвет-тёплый) 14%, transparent);
+      border: 1px solid color-mix(in srgb, var(--цвет-тёплый) 32%, transparent); }
+  #экран-07.светлый .пд-икон { color: var(--цвет-акцент-тёмный);
+      background: color-mix(in srgb, var(--цвет-тёплый) 18%, transparent);
+      border: 1px solid color-mix(in srgb, var(--цвет-тёплый) 55%, transparent); }
+
+  #экран-07 .пд-разделы { display: flex; flex-wrap: wrap; column-gap: 1.75rem; row-gap: 0; }
+  #экран-07 .пд-разделы a { display: inline-flex; align-items: center; min-height: 2.75rem;
+      white-space: nowrap; text-decoration: none; }
+  #экран-07.тёмный .пд-разделы a { color: color-mix(in srgb, var(--цвет-тёмный-текст) 78%, transparent); }
+  #экран-07.светлый .пд-разделы a { color: var(--цвет-текст-мягкий); }
+
+  #экран-07 .пд-знак:hover, #экран-07 .пд-связь:hover, #экран-07 .пд-разделы a:hover {
+      text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .3em; }
+  #экран-07.тёмный .пд-знак:hover, #экран-07.тёмный .пд-связь:hover, #экран-07.тёмный .пд-разделы a:hover {
+      color: var(--цвет-тёмный-текст); text-decoration-color: var(--цвет-тёплый); }
+  #экран-07.светлый .пд-знак:hover, #экран-07.светлый .пд-связь:hover, #экран-07.светлый .пд-разделы a:hover {
+      color: var(--цвет-текст); text-decoration-color: var(--цвет-акцент-тёмный); }
+  #экран-07.тёмный .пд-знак:focus-visible, #экран-07.тёмный .пд-связь:focus-visible,
+  #экран-07.тёмный .пд-разделы a:focus-visible { outline-color: var(--цвет-тёмный-текст); }
+  #экран-07.светлый .пд-знак:focus-visible, #экран-07.светлый .пд-связь:focus-visible,
+  #экран-07.светлый .пд-разделы a:focus-visible { outline-color: var(--цвет-акцент-тёмный); }
+
+  #экран-07 .пд-низ { display: grid; row-gap: .25rem; margin-top: 1.5rem; padding-top: 1.25rem;
+      border-top-width: 1px; border-top-style: solid; }
+  #экран-07 .пд-низ p { margin: 0; font-size: var(--кегль-мелкий); line-height: 1.55; }
+  #экран-07 .пд-юр { text-wrap: balance; }
+  #экран-07.тёмный .пд-низ { border-top-color: color-mix(in srgb, var(--цвет-тёмный-текст) 12%, transparent); }
+  #экран-07.светлый .пд-низ { border-top-color: var(--цвет-линия); }
+  #экран-07.тёмный .пд-низ p { color: color-mix(in srgb, var(--цвет-тёмный-текст) 62%, transparent); }
+  #экран-07.светлый .пд-низ p { color: var(--цвет-текст-мягкий); }
+
+  @media (min-width: 900px) {
+    #экран-07 .пд-верх { grid-template-columns: auto minmax(0, 1fr); align-items: end;
+        column-gap: clamp(2rem, 6vw, 5rem); }
+    #экран-07 .пд-разделы { justify-content: flex-end; }
+    #экран-07 .пд-низ { grid-template-columns: minmax(0, 1fr) auto; align-items: baseline;
+        column-gap: 2rem; margin-top: 1.75rem; }
+  }
